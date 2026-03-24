@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
-const src = resolve(root, 'public/original/nodo_favicon.png');
+const src = resolve(root, 'public/original/soundtrip_favicon.png');
 const outDir = resolve(root, 'public/favicons');
 
 mkdirSync(outDir, { recursive: true });
@@ -44,13 +44,13 @@ writeFileSync(resolve(outDir, 'favicon.ico'), icoBuffer);
 console.log('  ✓ favicon.ico (16, 32, 48)');
 
 const manifest = {
-  name: 'NODO Travel',
-  short_name: 'NODO',
+  name: 'SoundTrip',
+  short_name: 'SoundTrip',
   icons: [
     { src: '/favicons/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
     { src: '/favicons/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
   ],
-  theme_color: '#ff6b35',
+  theme_color: '#8249df',
   background_color: '#0a090c',
   display: 'standalone',
 };
@@ -67,7 +67,7 @@ console.log(`
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
 <link rel="manifest" href="/favicons/site.webmanifest" />
 <meta name="msapplication-TileImage" content="/favicons/mstile-150x150.png" />
-<meta name="msapplication-TileColor" content="#ff6b35" />
-<meta name="theme-color" content="#ff6b35" />
+<meta name="msapplication-TileColor" content="#8249df" />
+<meta name="theme-color" content="#8249df" />
 ---------------------------------
 `);

@@ -7,7 +7,7 @@ type: reference
 # Favicon Generation Plan (Vite + React + TypeScript stack)
 
 ## Prerequisites
-- Source image: a square PNG at `public/original/eleven_favicon.png` (min 512×512 recommended)
+- Source image: a square PNG at `public/original/soundtrip_favicon.png` (min 512×512 recommended)
 - `sharp` already in devDependencies (installed via npm)
 
 ---
@@ -31,7 +31,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
-const src = resolve(root, 'public/original/eleven_favicon.png'); // ← change this
+const src = resolve(root, 'public/original/soundtrip_favicon.png'); // ← change this
 const outDir = resolve(root, 'public/favicons');
 
 mkdirSync(outDir, { recursive: true });
@@ -143,6 +143,6 @@ Paste the printed snippet inside `<head>`:
 
 ## Customization checklist
 
-- [ ] Replace `eleven_favicon.png` with actual source filename
+- [ ] Replace `soundtrip_favicon.png` with actual source filename
 - [ ] Replace `<App Name>` with app display name
 - [ ] Replace `#000000` with brand primary color
