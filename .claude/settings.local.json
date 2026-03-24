@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:\\\\DevLearn\\\\IA\\\\CLAUDE\\\\practices\\\\Claude-Code-Masterclass\" && npm run test 2>&1)",
+      "Bash(cd \"D:\\\\DevLearn\\\\IA\\\\CLAUDE\\\\practices\\\\Claude-Code-Masterclass\" && npm run lint 2>&1)",
+      "Bash(node scripts/generate-og-image.mjs)",
+      "Skill(commit-message-v2)"
+    ]
+  }
+}
